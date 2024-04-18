@@ -1,5 +1,7 @@
-const WindPage = () => {
-  return <div className="text-red-300">Wind Page</div>;
+import WindComponent from '@/components/windComponent';
+
+const WindPage = ({ params, searchParams: { lat, lon } }) => {
+  return <WindComponent lat={lat} lon={lon} />;
 };
 
 export default WindPage;
